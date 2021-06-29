@@ -1,0 +1,21 @@
+# Variable Definition
+root_dir=/home/chendy/hypercomm_fMRI
+output_dir=${root_dir}/nii_Rawdata
+input_root_dir=/home/server/hypercomm/data-vtc
+file_format="sub-%i_run-%s_%d"
+compress=y
+
+subj_ID=s01n
+input_dir=${input_root_dir}/s01/PRISMA
+task_ID=Hypercomm
+
+anat_keyword=mprage
+func_keyword=ep2d_bold
+
+anat_bids_string=T1w
+func_bids_string=bold
+
+info_file=origin_info.txt
+skip_keywords='3Plane_Loc ASSET_calibration'
+
+include_sn=n
